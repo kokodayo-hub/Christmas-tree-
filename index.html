@@ -338,8 +338,8 @@
             if (STATE.mode === 'SCATTER' || STATE.mode === 'TREE') {
                  scene.rotation.y += 0.002; // 慢速自转展示
                  if(STATE.handDetected) {
-                     scene.rotation.y += STATE.rotationSpeed.x * 0.08;
-                     scene.rotation.x += STATE.rotationSpeed.y * 0.05;
+                     scene.rotation.y += STATE.rotationSpeed.x * 0.02;
+                     scene.rotation.x += STATE.rotationSpeed.y * 0.01;
                  }
             }
             composer.render();
